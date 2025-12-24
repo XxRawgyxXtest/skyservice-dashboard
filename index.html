@@ -9,12 +9,8 @@
     <link rel="icon" type="image/png" href="/favicon.png"> 
 
     <meta name="description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-    <meta property="og:title" content="SkyService Dashboard" />
-    <meta property="og:description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-    <meta name="twitter:title" content="SkyService Dashboard" />
-    <meta name="twitter:description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 <body>
 
@@ -28,16 +24,15 @@
         <p>Host Minecraft velocissimi, bot Discord intelligenti e siti web moderni...</p>
         <button>VISUALIZZA LISTINO</button>
         <button>CONTATTA STAFF</button>
-        
         </main>
-    
+
     <button data-netlify-identity-button>Area Amministrativa</button>
     
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
                 if (!user) {
-                    // Se non loggato, al successo del login reindirizza a /admin.html
+                    // Reindirizza l'utente a /admin.html dopo il login riuscito
                     window.netlifyIdentity.on("login", () => {
                         document.location.href = "/admin.html"; 
                     });
@@ -49,26 +44,6 @@
             });
         }
     </script>
-    <script>
-    // Questo codice gestisce il reindirizzamento dopo un login o un logout
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                // Se l'utente non è loggato, attiva la funzione di login
-                window.netlifyIdentity.on("login", () => {
-                    // Reindirizza l'utente alla pagina admin dopo il login
-                    document.location.href = "/admin.html"; 
-                });
-            }
-        });
-        
-        // Gestisce il reindirizzamento dopo il logout
-        window.netlifyIdentity.on('logout', () => {
-            document.location.href = '/'; // Reindirizza alla homepage dopo il logout
-        });
-    }
-</script>
     
-    </body>
+</body>
 </html>
-
