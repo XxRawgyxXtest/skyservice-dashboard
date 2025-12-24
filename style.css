@@ -501,5 +501,27 @@ footer a:hover {
     .contact-box {
         padding: 40px 24px;
     }
+    .pricing-grid {
+    display: grid; /* o flex */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne uguali */
+    gap: 30px;
+    align-items: stretch; /* Le card si estendono per avere la stessa altezza */
+    margin-top: 50px;
 }
+
+.pricing-card {
+    display: flex; /* Utile per allineare il contenuto all'interno */
+    flex-direction: column;
+    /* Altre regole di stile come border, padding, ecc. */
+}
+.btn-secondary {
+    /* ... altre regole ... */
+    white-space: nowrap; /* Impedisce che il testo vada a capo */
+    padding: 10px 20px; /* Assicurati che il padding non sia troppo grande */
+}
+    
+    
+    
+}
+
    
