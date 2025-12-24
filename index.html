@@ -1,283 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>SkyService Dashboard</title>
-    <meta name="description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-    <meta property="og:title" content="SkyService Dashboard" />
-    <meta property="og:description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-    <meta name="twitter:title" content="SkyService Dashboard" />
-    <meta name="twitter:description" content="SkyService - Professional Discord Bot & Minecraft Server Solutions" />
-    <meta name="twitter:site" content="@replit" />
-    
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richiedi Preventivo | SkyService</title>
+    <meta name="description" content="Richiedi un preventivo personalizzato per Bot Discord, Server Minecraft o Soluzioni Web." />
     
-    <link rel="icon" type="image/png" href="/favicon.png"> 
-
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="preventivo-style.css" />
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="#home" class="logo">
-                <div class="logo-icon">⚡</div>
-                <span>SKY<span style="color: var(--primary);">SERVICE</span></span>
-            </a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#minecraft">Minecraft</a>
-                <a href="#discord-bots">Bot Discord</a>
-                <a href="#web-solutions">Siti Web</a>
-                <a href="#pricing">Listino</a>
-                <a href="preventivo.html" class="cta-btn">Inizia Ora</a>
-                
-                <button data-netlify-identity-button style="background: none; border: none; color: white; cursor: pointer; margin-left: 15px; font-size: 1em;">Area Amministrativa</button>
-            </div>
-        </div>
-        <div class="pricing-grid">
-    <div class="pricing-card"> ... </div>
-    <div class="pricing-card featured"> ... </div>
-    <div class="pricing-card"> ... </div>
-</div>
-    </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>POTENZIA IL TUO <br><span class="hero-gradient">UNIVERSO DIGITALE</span></h1>
-            <p>Host Minecraft velocissimi, bot Discord intelligenti e siti web moderni. Tutto su un'infrastruttura enterprise affidabile.</p>
-            <div class="hero-buttons">
-                <a href="#pricing" class="btn btn-primary">Visualizza Listino</a>
-                <a href="preventivo.html" class="btn btn-secondary">Contatta Staff</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="minecraft">
-        <div class="container">
-            <h2>SERVER MINECRAFT VELOCI & STABILI</h2>
-            <p>Hosting Minecraft affidabile e performante per qualsiasi comunità.</p>
-            
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">🛡️</div>
-                    <h3>VANILLA SERVERS</h3>
-                    <p>Server vanilla puri con le ultime versioni di Minecraft</p>
-                    <ul class="card-features">
-                        <li>10-50 Slot</li>
-                        <li>Backup automatici</li>
-                        <li>DDoS Protection</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Scopri di più →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>MODDED SERVERS</h3>
-                    <p>Server con mods e plugin professionali</p>
-                    <ul class="card-features">
-                        <li>50+ Slot</li>
-                        <li>Plugin custom</li>
-                        <li>Anti-Cheat</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Scopri di più →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>NETWORK</h3>
-                    <p>Sistema multi-server Bungee/Velocity per comunità grandi</p>
-                    <ul class="card-features">
-                        <li>100+ Slot</li>
-                        <li>Multi-server</li>
-                        <li>Load Balancing</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Scopri di più →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="discord-bots">
-        <div class="container">
-            <h2>BOT DISCORD <span class="hero-gradient">INTELLIGENTI</span></h2>
-            <p>Automatizza la tua community e gestisci le operazioni con bot custom e affidabili, scritti in Python o JavaScript.</p>
-            
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">🤖</div>
-                    <h3>BOT DI MODERAZIONE</h3>
-                    <p>Tool potenti per l'amministrazione, ban, mute automatici e filtri anti-spam avanzati.</p>
-                    <ul class="card-features">
-                        <li>Sistema Anti-Raid</li>
-                        <li>Auto-Moderazione</li>
-                        <li>Log dettagliati</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Vedi Pacchetti →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">📊</div>
-                    <h3>INTEGRAZIONE DATI</h3>
-                    <p>Connessione diretta ai dati del tuo server Minecraft (statistiche, ranks) e gestione economica Discord.</p>
-                    <ul class="card-features">
-                        <li>Database integrato</li>
-                        <li>Statistiche in tempo reale</li>
-                        <li>Comandi Economy</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Vedi Pacchetti →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">🎟️</div>
-                    <h3>SISTEMI TICKET</h3>
-                    <p>Sistema di supporto utenti professionale e facile da usare per gestire richieste e assistenza.</p>
-                    <ul class="card-features">
-                        <li>Canali privati</li>
-                        <li>Transcript automatici</li>
-                        <li>Staff Roles</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Vedi Pacchetti →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="web-solutions">
-        <div class="container">
-            <h2>SOLUZIONI WEB <span class="hero-gradient">PROFESSIONALI</span></h2>
-            <p>Vendiamo il tuo progetto online con design moderni e piattaforme e-commerce integrate per lo store del tuo server.</p>
-            
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">💻</div>
-                    <h3>SITI VETRINA</h3>
-                    <p>Design moderno e responsive per presentare il tuo server o progetto al meglio.</p>
-                    <ul class="card-features">
-                        <li>Design Custom</li>
-                        <li>Mobile Responsive</li>
-                        <li>SEO Base</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Richiedi Info →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">🛒</div>
-                    <h3>STORE E-COMMERCE</h3>
-                    <p>Integrazione con piattaforme di pagamento (Tebex, Stripe) per vendere i tuoi prodotti in-game.</p>
-                    <ul class="card-features">
-                        <li>Integrazione Pagamenti</li>
-                        <li>Gestione prodotti</li>
-                        <li>Dashboard Admin</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Richiedi Info →</a>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">🔒</div>
-                    <h3>SICUREZZA & HOSTING</h3>
-                    <p>Hosting web ad alta velocità e sicurezza garantita (certificati SSL) per il massimo dell'affidabilità.</p>
-                    <ul class="card-features">
-                        <li>Certificato SSL</li>
-                        <li>Host Veloce</li>
-                        <li>Backup Giornalieri</li>
-                    </ul>
-                    <a href="preventivo.html" class="card-link">Richiedi Info →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="pricing">
-        <div class="container">
-            <h2>LIVELLI DI <span style="color: var(--primary);">SERVIZIO</span></h2>
-            <p>Scegli il pacchetto perfetto per le tue esigenze. Dalle configurazioni base alle infrastrutture enterprise.</p>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Pacchetto NORMALE</h3>
-                    <p>Ideale per Iniziative Personali</p>
-                    <ul class="pricing-features">
-                        <li><strong>Minecraft:</strong> Configurazione base e ottimizzazione</li>
-                        <li><strong>Discord:</strong> Bot base con comandi essenziali</li>
-                        <li><strong>Web:</strong> Pagine statiche</li>
-                    </ul>
-                    <a href="preventivo.html" class="btn btn-secondary">Richiedi Preventivo</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <h3>Pacchetto PRO</h3>
-                    <p>Per Community e Progetti in Crescita</p>
-                    <ul class="pricing-features">
-                        <li><strong>Minecraft:</strong> Server ottimizzato 50+ Slot</li>
-                        <li><strong>Discord:</strong> Bot custom con Database</li>
-                        <li><strong>Web:</strong> Sito web dinamico</li>
-                    </ul>
-                    <a href="preventivo.html" class="btn btn-primary">Richiedi Preventivo</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Pacchetto ULTIMATE</h3>
-                    <p>La Soluzione Tutto Incluso</p>
-                    <ul class="pricing-features">
-                        <li><strong>Minecraft:</strong> Network complesso Bungee/Velocity</li>
-                        <li><strong>Discord:</strong> Integrazione API completa</li>
-                        <li><strong>Web:</strong> Piattaforma E-commerce Custom</li>
-                    </ul>
-                    <a href="preventivo.html" class="btn btn-secondary">Richiedi Preventivo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="contact-box">
-                <h2>Pronto a Iniziare?</h2>
-                <p>Per maggiori dettagli sui prezzi o per richiedere un preventivo personalizzato, unisciti al nostro canale di supporto per parlare direttamente con lo Staff.</p>
-                <a href="https://discord.com/channels/1447645589763260439/1447661773837701272" target="_blank" class="btn btn-primary">Unisciti al Canale Supporto</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 SKYSERVICE. All rights reserved. <a href="https://discord.gg/fgzbPEr9" target="_blank" style="text-decoration: underline;">Discord Server</a></p>
-            <div>
-                <a href="#">Privacy</a> | 
-                <a href="#">Terms</a> | 
-                <a href="#">Status</a>
-            </div>
-        </div>
-    </footer>
-
-        <script>
-        // Smooth scroll (mantenuto)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+    <div class="preventivo-container">
         
-        // Netlify Identity Login/Logout Logic
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin.html"; 
-                    });
-                }
-            });
-            window.netlifyIdentity.on('logout', () => {
-                document.location.href = '/'; 
-            });
-        }
-    </script>
+        <header class="header">
+            <a href="index.html" class="back-link">← Torna alla Home</a>
+            <h1>RICHIESTA PREVENTIVO</h1>
+            <p class="description">Compila i campi sottostanti per aiutarci a capire il tuo progetto e ottenere un'offerta personalizzata.</p>
+        </header>
+
+        <main class="form-card">
+            <form id="quoteForm">
+                
+                <div class="input-group">
+                    <label for="name">Nome/Nick Discord</label>
+                    <input type="text" id="name" name="name" required placeholder="Es: MarioRossi#1234 o il tuo ID Discord">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email (Opzionale)</label>
+                    <input type="email" id="email" name="email" placeholder="usato solo per preventivi formali">
+                </div>
+
+                <div class="input-group">
+                    <label for="service">Tipo di Servizio Richiesto</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Seleziona un'opzione</option>
+                        <option value="minecraft_network">Hosting Minecraft (Server/Network)</option>
+                        <option value="discord_bot">Sviluppo Bot Discord Custom</option>
+                        <option value="web_solution">Sito Web / Store E-commerce</option>
+                        <option value="ultimate_bundle">Pacchetto ULTIMATE (Tutto Incluso)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="details">Dettagli del Progetto (Spiega le tue esigenze)</label>
+                    <textarea id="details" name="details" rows="6" required placeholder="Es: Un bot Discord che gestisca i ticket e l'economia, o un server Survival 1.20 con 50 slot..."></textarea>
+                </div>
+
+                <div class="action-box">
+                    <p>Una volta inviata la richiesta, ti preghiamo di **unirti al nostro Discord** per discutere i dettagli e completare il pagamento.</p>
+                    <button type="submit" class="btn submit-btn">INVIA RICHIESTA</button>
+                    <a href="https://discord.gg/jypcFpaB" target="_blank" class="btn discord-btn">UNISCITI AL DISCORD PER IL PAGAMENTO →</a>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>Il pagamento verrà gestito solo dopo la conferma dei dettagli e del costo finale da parte di un membro dello Staff.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Simula l'invio e reindirizza
+            alert('Richiesta Inviata! Verrai reindirizzato al nostro Discord per finalizzare il preventivo.');
+            window.open('https://discord.gg/jypcFpaB', '_blank');
+        });
+    </script>
 </body>
 </html>
+
 
