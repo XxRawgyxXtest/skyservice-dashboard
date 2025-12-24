@@ -49,6 +49,26 @@
             });
         }
     </script>
+    <script>
+    // Questo codice gestisce il reindirizzamento dopo un login o un logout
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                // Se l'utente non è loggato, attiva la funzione di login
+                window.netlifyIdentity.on("login", () => {
+                    // Reindirizza l'utente alla pagina admin dopo il login
+                    document.location.href = "/admin.html"; 
+                });
+            }
+        });
+        
+        // Gestisce il reindirizzamento dopo il logout
+        window.netlifyIdentity.on('logout', () => {
+            document.location.href = '/'; // Reindirizza alla homepage dopo il logout
+        });
+    }
+</script>
     
     </body>
 </html>
+
