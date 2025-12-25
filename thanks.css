@@ -1,0 +1,29 @@
+/* ======================================= */
+/* Stili specifici per la pagina thanks.html */
+/* ======================================= */
+
+.thanks-container {
+    /* Centra il contenuto al centro della pagina */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; 
+    text-align: center;
+    padding: 20px;
+}
+
+.thanks-container h1 {
+    font-size: 3em;
+    color: var(--primary); 
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+}
+
+.thanks-container p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin-bottom: 2.5em;
+    color: #ccc; 
+}
